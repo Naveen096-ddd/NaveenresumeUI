@@ -1,0 +1,71 @@
+.home{
+    background-image: url('../../../components/assests/home.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: top center;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+.homelist{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    top: 30%;
+}
+.buttonhome{
+  background-color: #111111;
+  border-radius: 8px;
+  border-color: rgb(193, 236, 236);
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: border-radius 0.3s ease, background-color 0.3s ease;
+}
+.buttonhome:hover {
+  /* background-color: #230e44; */
+  border-radius: 20px;
+  border-color: #c0d5df;
+       background: linear-gradient(15deg,#f60ed7,#381988,#c8c863,#8e3610,#a70b15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: gradient-flow 8s ease infinite;
+    
+}
+.homelist h2{
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+     background: linear-gradient(30deg,#00ffff,#ff00ff,#ffff00,#00ff00,#ff9900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: gradient-flow 8s ease infinite;
+}
+.homelist h1{
+    color: #fff;
+    font-size: 48px;
+    margin: 10px 0;
+    padding: 0;
+     background: linear-gradient(15deg,#f60ed7,#381988,#c8c863,#8e3610,#a70b15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: gradient-flow 8s ease infinite;
+
+}
+@keyframes gradient-flow {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+.homelist p{
+    color: #fff;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 0;
+    display: inline-block;
+    max-width: 80%;
+}

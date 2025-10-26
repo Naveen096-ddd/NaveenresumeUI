@@ -1,0 +1,63 @@
+.skill {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.skill h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.skillicons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.icon-box {
+  background: #140202;
+  border-radius: 10px;
+  padding: 30px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(231, 223, 223, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.icon-box:hover {
+  background: #0e1317;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.skillicon {
+  font-size: 55px;
+  color: #eaedf0;
+  transition: transform 0.3s ease;
+}
+
+.icon-box:hover .skillicon {
+  transform: scale(1.1);
+}
+.icon-name {
+  position: absolute;
+  bottom: -20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffff;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.icon-box:hover .icon-name {
+  bottom: 10px;
+  opacity: 1;
+}
+

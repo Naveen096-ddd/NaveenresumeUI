@@ -1,0 +1,53 @@
+ .navbarhead {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.navbarhead:hover {
+    background: linear-gradient(15deg,#f60ed7,#381988,#c8c863,#8e3610,#a70b15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: gradient-flow 8s ease infinite;
+}
+
+.navitems button {
+  color: white;
+  position: relative;
+  background: none;      
+  border: none;
+  text-transform: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+  
+}
+.navitems button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  transition: width 0.3s ease;
+}
+
+.navitems button:hover::after {
+  width: 100%;
+}
+.navitems button:hover{
+  background: linear-gradient(30deg, rgba(255, 106, 0, 0.5) 0%, rgba(238, 9, 121, 0.5) 25%, rgba(106, 17, 203, 0.5) 50%, rgba(37, 117, 252, 0.5) 75%, rgba(67, 206, 162, 0.5) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: gradient-flow 8s ease infinite;
+}
+@keyframes gradient-flow {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}

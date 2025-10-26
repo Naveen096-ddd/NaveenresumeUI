@@ -1,0 +1,74 @@
+.linkdin{
+  margin-top: 100px;
+}
+.linkdin-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 30px 0px;
+  /* background-color: #181818; */
+  box-shadow: 0 4px 8px rgba(237, 242, 241, 0.25);
+}
+.imglink {
+  width: 600px;
+  height: 550px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.imglink:hover{
+   transform: scale(0.9);
+}
+.mb-4{
+    color: white;
+}
+.linkdin-text {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.linkdin-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.linkbutton1{
+    background-color: #181818;
+    color: white;
+}
+.linkbutton1:hover{
+  background: linear-gradient(30deg, rgba(255, 106, 0, 0.5) 0%, rgba(238, 9, 121, 0.5) 25%, rgba(106, 17, 203, 0.5) 50%, rgba(37, 117, 252, 0.5) 75%, rgba(67, 206, 162, 0.5) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: gradient-flow 8s ease infinite;
+}
+.linkbutton2:hover{
+  background: linear-gradient(30deg, rgba(255, 106, 0, 0.5) 0%, rgba(238, 9, 121, 0.5) 25%, rgba(106, 17, 203, 0.5) 50%, rgba(37, 117, 252, 0.5) 75%, rgba(67, 206, 162, 0.5) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: gradient-flow 8s ease infinite;
+}
+.icons:hover{
+  background-color: rgba(255, 255, 255, 0.2); /* light background */
+  transform: scale(1.1); /* optional zoom effect */
+  cursor: pointer;
+  border-radius: 20px;
+}
+@keyframes gradient-flow {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+@media (max-width: 768px) {
+  .linkdin-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imglink {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}

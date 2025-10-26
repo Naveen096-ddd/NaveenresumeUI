@@ -1,0 +1,25 @@
+.contact{
+    margin-top: 40px;
+}
+.cardcontact{
+    background-color: #17002f;
+    color: white;
+}
+.card1{
+    background-color: #17002f;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+.card2{
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}

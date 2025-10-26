@@ -1,0 +1,111 @@
+.about{
+    background-image: url('../../../components/assests/image.png');
+    min-height: 300vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.aboutlist{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+}
+.aboutlist h1{
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(30deg,#00ffff,#ff00ff,#ffff00,#00ff00,#ff9900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: shine 4s ease infinite;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+                0 0 20px rgba(255, 255, 255, 0.5);
+}
+/* .aboutlist h1:hover{
+    background: linear-gradient(30deg,#00ffff,#ff00ff,#ffff00,#00ff00,#ff9900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: shine 4s ease infinite;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+                0 0 20px rgba(255, 255, 255, 0.5);
+} */
+@keyframes shine {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.aboutlist p{
+    color: #fff;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 0;
+    display: block;
+    /* height: 250px; */
+    width: auto;
+}
+.name{
+    color: #fff;
+    margin-top: 30px;
+    font-size: 35px;
+    background: linear-gradient(30deg,#00ffff,#ff00ff,#ffff00,#00ff00,#ff9900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: gradient-flow 8s ease infinite;
+}
+@keyframes gradient-flow {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+.role{
+    color: #fff;
+    font-size: 20px;
+     background: linear-gradient(90deg,#0b4242,#ac37ac,#7b7b0a,#0f5b0f,#704d19);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: gradient-flow 8s ease infinite;
+}
+.buttonabout{
+  background-color: #111111;
+  border-radius: 8px;
+  border-color: rgb(193, 236, 236);
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: border-radius 0.3s ease, background-color 0.3s ease;
+}
+.buttonabout:hover {
+    background: linear-gradient(15deg,#f60ed7,#381988,#c8c863,#8e3610,#a70b15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: gradient-flow 8s ease infinite;
+    border-radius: 20px;
+    border-color: #c0d5df;
+    
+}
+@media (max-width: 768px) {
+  .about {
+    background-size: contain;
+    min-height: 460vh;
+    background-position: center;
+  }
+}
+
+@media (min-width: 400px ) and (max-width:550px){
+  .about {
+    background-size: 110%;
+     background-size: contain;
+    /* min-height: 580vh; */
+    background-position: center;
+  }
+}
