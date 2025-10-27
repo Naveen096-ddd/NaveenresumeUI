@@ -4,8 +4,8 @@ import "./skill.css";
 
 const Skill = () => {
   return (
-    <div className="skill">
-      <h1>Things I Code With</h1>
+    <div id="skill" className="skill container-fluid" style={{ backgroundColor: '#020028', width: '100%'}}>
+      <h1 className="stitle">Things I Code With</h1>
       <div className="skillicons">
         {skills.map((skill, index) => (
           <div className="icon-box" key={index}>

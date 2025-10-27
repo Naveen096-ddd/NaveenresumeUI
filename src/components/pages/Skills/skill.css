@@ -1,6 +1,9 @@
-.skill {
+ .skill {
   text-align: center;
   padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skill h1 {
@@ -8,13 +11,31 @@
   color: #333;
 }
 
+.stitle {
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(30deg, #00ffff, #ff00ff, #ffff00, #00ff00, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  animation: shine 4s ease infinite;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+               0 0 20px rgba(255, 255, 255, 0.5);
+}
+
 .skillicons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 50px;
+  justify-content: center;
   justify-items: center;
   align-items: center;
+
 }
+
 .icon-box {
   background: #140202;
   border-radius: 10px;
@@ -27,7 +48,7 @@
   align-items: center;
   position: relative;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(231, 223, 223, 0.1);
+  box-shadow: 10px 10px 10px rgba(237, 242, 241, 0.25);
   overflow: hidden;
   cursor: pointer;
 }
@@ -35,8 +56,9 @@
 .icon-box:hover {
   background: #0e1317;
   transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
 .skillicon {
   font-size: 55px;
   color: #eaedf0;
@@ -46,12 +68,13 @@
 .icon-box:hover .skillicon {
   transform: scale(1.1);
 }
+
 .icon-name {
   position: absolute;
   bottom: -20px;
   font-size: 14px;
   font-weight: 600;
-  color: #ffff;
+  color: #fff;
   opacity: 0;
   transition: all 0.3s ease;
 }
@@ -60,4 +83,43 @@
   bottom: 10px;
   opacity: 1;
 }
+@media (max-width: 1024px) {
+  .skillicons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
+@media (max-width: 768px) {
+  .skillicons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .icon-box {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+  }
+  .skillicon {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillicons {
+    grid-template-columns: 1fr;
+  }
+  .icon-box {
+    width: 90px;
+    height: 90px;
+    padding: 15px;
+  }
+  .skillicon {
+    font-size: 40px;
+  }
+}
+
+/* Animation for gradient text */
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

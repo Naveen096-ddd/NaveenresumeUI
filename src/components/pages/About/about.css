@@ -1,6 +1,6 @@
 .about{
-    background-image: url('../../../components/assests/image.png');
-    min-height: 300vh;
+    background-image: url('../../../components/assests/abouts.png');
+    min-height: 70vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -13,8 +13,9 @@
     left: 25%;
     width: 50%;
 }
-.aboutlist h1{
+.aboutlist .title{
     color: #fff;
+    font-weight: bold;
     font-size: 40px;
     margin: 0;
     padding: 0;
@@ -26,15 +27,6 @@
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
                 0 0 20px rgba(255, 255, 255, 0.5);
 }
-/* .aboutlist h1:hover{
-    background: linear-gradient(30deg,#00ffff,#ff00ff,#ffff00,#00ff00,#ff9900);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 300%;
-    animation: shine 4s ease infinite;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
-                0 0 20px rgba(255, 255, 255, 0.5);
-} */
 @keyframes shine {
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}
@@ -47,7 +39,6 @@
     margin: 10px 0;
     padding: 0;
     display: block;
-    /* height: 250px; */
     width: auto;
 }
 .name{
@@ -67,6 +58,7 @@
 }
 .role{
     color: #fff;
+    font-weight: bold;
     font-size: 20px;
      background: linear-gradient(90deg,#0b4242,#ac37ac,#7b7b0a,#0f5b0f,#704d19);
     -webkit-background-clip: text;
@@ -93,19 +85,28 @@
     border-color: #c0d5df;
     
 }
+@media (min-width:340px) and (max-width:720px) {
+    .about {
+    background-size: contain;
+    min-height: 100vh;
+    background-position: center;
+  }
+}
 @media (max-width: 768px) {
   .about {
     background-size: contain;
-    min-height: 460vh;
+    min-height: 100vh;
     background-position: center;
   }
 }
 
-@media (min-width: 400px ) and (max-width:550px){
+@media (min-width: 742px ) and (max-width:1080px){
   .about {
-    background-size: 110%;
-     background-size: contain;
-    /* min-height: 580vh; */
-    background-position: center;
+     min-height: 90vh;
+  }
+}
+@media (min-width: 362px) and (max-width:654px){
+    .about {
+     height: 100vh;
   }
 }

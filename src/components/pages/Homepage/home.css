@@ -13,6 +13,9 @@
     align-items: center;
     top: 30%;
 }
+.htitle{
+    font-weight: bold;
+}
 .buttonhome{
   background-color: #111111;
   border-radius: 8px;

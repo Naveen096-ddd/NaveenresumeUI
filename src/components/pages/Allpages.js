@@ -1,12 +1,13 @@
 import React from "react";
 import Home from "./Homepage/Home";
-import About from "./About/About";
-const abcd = ()=>{
+import Nav from "../Nav";
+const Allpages = ()=>{
     return(
         <div>
+            <Nav/>
             <Home/>
-            <About/>
+            {/* <Abouts/> */}
         </div>
     )
 }
-export default abcd;
+export default Allpages;

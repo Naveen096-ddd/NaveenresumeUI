@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Card} from "react-bootstrap";
-import { Projects } from "../../assests/assests";
+import { Projects,ekalavyas,laundry } from "../../assests/assests";
 import JavascriptIcon from '@mui/icons-material/Javascript';
 import HtmlIcon from '@mui/icons-material/Html';
 import CssIcon from '@mui/icons-material/Css';
@@ -10,12 +10,12 @@ import "./project.css";
 
 const Project = () => {
   return (
-    <div className="linkdin container">
-      <h1 className="mb-4">Projects Page</h1>
+    <div id='project' className="linkdin container-fluid" style={{ backgroundColor: '#020028', width: '100%',minHeight: '100vh'}}>
+      <h1 className="mb-4 ptitle">Projects Page</h1>
       {Projects.map((item, index) => (
         <Card className="p-4 linkdin-card mx-auto mb-4" style={{backgroundColor:'#181818'}} key={index}>
           {item.project_title && (
-            <h4 className="mb-4">{item.project_title}</h4>
+            <h4 className="titlep mb-4">{item.project_title}</h4>
           )}
           <div className="linkdin-row d-flex flex-md-row flex-column align-items-center">
             <div className="linkdin-image me-md-4 mb-3 mb-md-0">
@@ -33,7 +33,7 @@ const Project = () => {
               <FaBootstrap style={{color:'white',width:'25px',marginLeft:'5px',height:'25px'}} className="icons"/>
               <p className="linkdin-text" style={{color:'white'}}>{item.project_content}</p>
               <div className="linkbutton">
-                <Button className="linkbutton1" style={{backgroundColor:'#181818'}}>Github</Button>
+                <Button  onClick={() => window.open(item.project_git, '_blank')} className="linkbutton1" style={{backgroundColor:'#181818'}}>Github</Button>
                 <Button style={{marginLeft:"10px",backgroundColor:'#181818'}} className="linkbutton2">Demo</Button>
               </div>
             </div>

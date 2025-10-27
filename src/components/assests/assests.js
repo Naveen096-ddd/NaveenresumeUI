@@ -1,5 +1,5 @@
 import home_imgs from './home.png';
-import about_imgs from './about.png';
+import about_imgs from './abouts.png';
 import linkdin from './linkdin.png';
 import JavascriptIcon from "@mui/icons-material/Javascript";
 import HtmlIcon from "@mui/icons-material/Html";
@@ -7,6 +7,11 @@ import CssIcon from "@mui/icons-material/Css";
 import { FaBootstrap } from "react-icons/fa";
 import { RiReactjsFill } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+import { SiMysql } from "react-icons/si";
+import ekalavya from './ekalavyaui.png';
+import laundrys from './laundryui.png';
+import dashboard from './dashboardui.png';
 export const homes =[
     {
         home_con :'UI ALCHEMIST',
@@ -29,14 +34,33 @@ export const Projects  =[
     {
         project_title :'LinkedIn Clone',
         project_content :'LinkedIn clone with login authentication and using firebase.',
-        project_img : linkdin
+        project_img : linkdin,
+        project_git:'https://www.linkedin.com/in/menda-naveen-03043b224'
+    },
+    {
+      project_title :'EkalavyaUI',
+      project_content : 'The Ekalavya UI is a responsive web platform built using React.js and Bootstrap,Material UI.',
+      project_img : ekalavya,
+      project_git: 'https://github.com/Naveen096-ddd/EkalavyaUI.git'
+    },
+    {
+      project_title :'LaundryUI',
+      project_content : 'The Laundry Management System is a responsive web application built with React.js.',
+      project_img : laundrys,
+      project_git: 'https://github.com/Naveen096-ddd/LaundryUI.git'
+    },
+    {
+      project_title :'DashboardUI',
+      project_content : 'To design User,Admin,Manager Dashboards for Ekalavya website by using React.js and Chats.js',
+      project_img : dashboard,
+      project_git: 'https://github.com/Naveen096-ddd/EkalavyaUI/tree/main/client/src/pages'
     }
 ]
 export const skills = [
   { icon: <RiReactjsFill className="skillicon" />,
      name: "React Js"
   },
-  { icon: <JavascriptIcon className="skillicon" />,
+  { icon: <JavascriptIcon className="skillicon"/>,
     name: "JavaScript"
   },
   { icon: <HtmlIcon className="skillicon" />,
@@ -51,5 +75,12 @@ export const skills = [
   {
     icon: <FaGithub className='skillicon'/>,
     name: 'Github'
+  },
+  { icon: <VscVscode className="skillicon" />,
+    name: "Vs code" 
+  }
+  ,
+  { icon: <SiMysql className="skillicon" />,
+    name: "My Sql" 
   }
 ];

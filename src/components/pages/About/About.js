@@ -10,10 +10,10 @@ const About = () => {
     const {downloadResume} = useContext(ResumeContext);
   return (
     <>
-    <div className="about">
+    <div id='about' className="about">
         {abouts.map((item,index)=>(
             <div key={index} className='aboutlist'>
-                <h1>{item.about_title}</h1>
+                <h1 className="title">{item.about_title}</h1>
                 <h2 className="name">{item.about_name}</h2>
                 <h3 className="role">{item.about_role}</h3>
                 <p>{item.about_content}</p>
@@ -22,9 +22,6 @@ const About = () => {
                     sx={{backgroundColor:'#111111',borderRadius:'8px',padding:'10px 20px',fontSize:'16px',border:'2px solid white'}}>Download Resume
                 </Button><br/>
                 <div style={{marginBottom:'50px'}}>
-                    <Project/>
-                    <Skill/>
-                    <Contact/>
                 </div>
             </div>
             
